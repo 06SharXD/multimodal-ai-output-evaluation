@@ -1,54 +1,37 @@
 # Multimodal AI Output Evaluation & Quality Assessment
 
-A self-initiated portfolio project for practicing structured, human-led evaluation of AI-generated images, videos, and audio against natural-language prompts.
+This self-initiated portfolio project documents a human review of AI-generated images, videos, and read-aloud audio against written prompts.
 
-> **Project integrity:** This repository contains evaluation materials and blank templates only. The project owner must perform all media reviews and author all ratings, observations, comparisons, and justifications. No evaluation results are included.
+## Project scope
 
-## Purpose
+The project owner generated and reviewed six images, six videos, and four read-aloud audio clips. Each output has an owner-provided overall score from 1 to 5 and a qualitative observation. The scores are holistic impressions, not separate scores for each rubric criterion.
 
-Develop and document a repeatable method for checking prompt adherence, identifying output quality issues from observable evidence, and writing clear evaluation rationales across image, video, and voice tasks.
+The review covers prompt fit and perceived quality. It is a small, single-reviewer exercise; it does not establish general performance of the generation services. Pairwise comparisons and calibration were not performed.
 
-## Project status
+## Summary of owner scores
 
-- [x] Phase 0 — repository setup, principles, and blank logs
-- [x] Phase 1 — prompt set for image, video, and voice practice
-- [x] Phase 2 — blank rating and comparison templates plus modality rubrics
-- [x] Phase 3 — calibration procedure and blank calibration log
-- [x] Phase 5 — optional analysis script for owner-entered ratings
-- [x] Phase 6 — methodology and final report templates
-- [x] Phase 7 — resume wording worksheet with evidence safeguards
-- [ ] Phase 4 — conduct and document human evaluations (project owner only)
+| Modality | Outputs | Overall score distribution |
+|---|---:|---|
+| Images | 6 | 1: one; 2: three; 5: two |
+| Videos | 6 | 2: one; 3: four; 4: one |
+| Read-aloud audio | 4 | 5: four |
 
-The checkmarks above indicate that the framework materials are prepared; they do not indicate that media have been generated, rated, or analyzed.
+See the [results report](reports/final-evaluation-report.md) for the owner’s observations and limitations.
 
-## Workflow
+## Repository contents
 
-1. Read [Evaluation Principles](guidelines/evaluation-principles.md) and the [Evaluation Workflow](guidelines/evaluation-workflow.md).
-2. Select prompts from the image, video, or voice prompt sets. Record the generation tool and version in the asset manifest.
-3. Apply the matching rubric. Read the prompt first, then score prompt adherence and output quality separately.
-4. Record one criterion judgment per row in the rating template. Tie observations to visible regions, timestamps, or spoken phrases.
-5. Use the calibration procedure before a longer session and take the prescribed breaks.
-6. Run the optional analysis script only after entering your own ratings.
-7. Complete the report templates from your own records. Keep unresolved or uncertain judgments explicit.
+- [Prompts](prompts/) — image, video, and voice prompt sets
+- [Guidelines](guidelines/) — review principles and workflow
+- [Rubrics](rubrics/) — criteria available for a more detailed second pass
+- [Asset manifest](data/asset-manifest.csv) — tool details, settings, and file references
+- [Images](data/assets/images/), [videos](data/assets/videos/), and [audio](data/assets/audio/) — reviewed media outputs
+- [Owner ratings](ratings/owner-ratings.csv) and [evaluation log](ratings/evaluation-log.csv)
+- [Methodology](reports/methodology.md) and [results report](reports/final-evaluation-report.md)
 
-## Repository map
+## Evaluation approach
 
-- `prompts/` — prompt sets for image, video, and voice practice
-- `rubrics/` — modality-specific rating criteria and score anchors
-- `data/` — blank asset manifest for tracking generated or reviewed materials
-- `ratings/` — blank rating, comparison, session, and calibration logs
-- `analysis/` — optional script for summaries of owner-entered ratings
-- `reports/` — methodology, final report, and resume wording templates
-- `guidelines/` — principles, workflow, calibration, and data-handling guidance
-
-## Evaluation data
-
-No outputs have been evaluated. The rating files are blank templates; there are no sample counts, findings, winners, or justifications in this repository.
+The owner supplied all ratings and observations recorded in this repository. The rubric files provide useful criteria, but this review used a single overall score per output. It should therefore be described as a holistic review, not a criterion-by-criterion rubric assessment.
 
 ## Responsible use
 
-Use tools and media only under their applicable terms. Do not upload private, identifying, or otherwise sensitive material. For a public portfolio, include only material you have permission to share and keep attribution and provenance records. See [Data Handling](guidelines/data-handling.md).
-
-## Next step
-
-The project owner should choose a small pilot, generate or source permitted outputs, and personally complete the ratings. Do not claim evaluation experience or results until the work has actually been performed and documented.
+The owner confirmed that these generated files may be shared publicly. The asset manifest records the tools and available provenance details. Local save times are not confirmed generation times.

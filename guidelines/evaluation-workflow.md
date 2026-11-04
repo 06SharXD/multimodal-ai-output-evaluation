@@ -15,10 +15,10 @@
 ## For each output
 1. Identify the prompt's requested content and constraints.
 2. Apply the matching modality rubric. Score prompt adherence separately from quality.
-3. Enter one row per criterion in the rating template.
+3. For a structured review, enter one row per criterion in the rating file. The current project records one overall impression per output instead.
 4. Record an evidence location and concise observation for any issue or judgment. Separate observation from rationale.
 5. Mark uncertainty where the evidence does not support a confident judgment.
-6. For comparisons, rate each output independently first. State the comparison basis and evidence; preference is optional and owner-authored.
+6. For comparisons, rate each output independently first. State the comparison basis and evidence; preference is optional.
 
 ## After a session
 - Review entries for missing IDs and unsupported claims, not to force agreement.
@@ -27,4 +27,4 @@
 - Keep original records; make corrections traceable.
 
 ## Suggested phases
-Setup; prompt practice; rubric familiarization; calibration; owner-led human evaluation; analysis and reporting; portfolio summary. The owner performs every media review and rating.
+Setup; prompt practice; rubric familiarization; calibration; owner-led human evaluation; analysis and reporting; portfolio summary.
